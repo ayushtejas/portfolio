@@ -1247,6 +1247,54 @@ body.light hr.separator {
     overflow: hidden;
   }
 
+  /* Skill Badges */
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 25px;  /* More rounded look */
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: #2c3e50;  /* Darker, more neutral color */
+  border: 2px solid #2980b9;  /* Consistent border color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-badge i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #2980b9;  /* Consistent icon color */
+}
+
+.skill-badge:hover {
+  background-color: #34495e;  /* Slightly lighter color on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill Categories */
+.skill-category {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ecf0f1;  /* Lighter text for readability */
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .col-6 {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+
   .btn:before {
     font: 15px/1.2em FontAwesome;
     color: #fff;
